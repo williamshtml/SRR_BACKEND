@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:16
+    container_name: srr_postgres_db
+    environment:
+      POSTGRES_USER: williams
+      POSTGRES_PASSWORD: "1234"
+      POSTGRES_DB: srr_recaudacion
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
