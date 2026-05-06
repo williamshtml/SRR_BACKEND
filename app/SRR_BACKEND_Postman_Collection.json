@@ -1,0 +1,46 @@
+{
+  "info": {
+    "_postman_id": "0ce47e2c-0d6f-4dc5-8ed7-3552c2862b8b",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53055792"
+  },
+  "item": [
+    {
+      "name": "SRR_BACKEND",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"amount\": 500.00,\r\n  \"sender_name\": \"Juan Santos\",\r\n  \"raw_message\": \"Yapeaste S/ 100.00\",\r\n  \"sync_method\": \"DIRECT\",\r\n  \"organization_id\": \"7dc0184e-2662-496c-8d57-1d71d6853ea4\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/sync/collect",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "sync",
+                "collect"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
